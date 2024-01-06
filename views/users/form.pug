@@ -1,0 +1,7 @@
+extends ../layout 
+block content
+    form(action="/users", method="post") 
+        input(type="text", name="username", placeholder="username", required=true)
+        input(type="email", name="email", placeholder="votre email", required=true)
+        input(type="password", name="password", placeholder="mot de passe", required=true)
+        input(type="submit")
